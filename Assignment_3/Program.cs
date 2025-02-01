@@ -7,8 +7,6 @@ namespace AdvancedCSharp
     {
         static void Main()
         {
-            Console.WriteLine("Assignment 03 - Advanced C#");
-
             #region Question 1 - Implement fPtr
             /*
             Considering the Code Below, Write Down the Body of all Listed Methods and Properties,
@@ -42,7 +40,7 @@ namespace AdvancedCSharp
             // d. Lambda Expression (GetPublicationDate)
             fPtr = B => B.PublicationDate.ToString();
             LibraryEngine.ProcessBooks(books, fPtr);
-            
+
             #endregion
         }
     }
