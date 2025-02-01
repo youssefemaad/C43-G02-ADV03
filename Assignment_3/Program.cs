@@ -43,19 +43,6 @@ namespace AdvancedCSharp
             fPtr = B => B.PublicationDate.ToString();
             LibraryEngine.ProcessBooks(books, fPtr);
             
-
-            #endregion
-
-            #region Book Class
-            // Define the Book class here
-            #endregion
-
-            #region BookFunctions Class
-            // Define the BookFunctions class here
-            #endregion
-
-            #region LibraryEngine Class
-            // Define the LibraryEngine class here
             #endregion
         }
     }

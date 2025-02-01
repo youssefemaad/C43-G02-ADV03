@@ -13,7 +13,7 @@ namespace Assignment_3
         {
             foreach (Book book in books)
             {
-                Console.WriteLine(fPtr(book));
+                Console.WriteLine(fPtr.Invoke(book));
             }
         }
     }

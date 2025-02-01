@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Assignment_3
 {
     internal class BookFunctions
-    {
+    {  
         public static string GetTitle(Book B)
         {
             return B.Title;
