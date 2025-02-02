@@ -30,8 +30,8 @@ namespace AdvancedCSharp
             LibraryEngine.ProcessBooks(books, fPtr);
 
             // b. BCL Delegates
-            fPtr = BookFunctions.GetAuthors;
-            LibraryEngine.ProcessBooks(books, fPtr);
+            Func<Book, string> fPtrFunc = BookFunctions.GetAuthors;
+            LibraryEngine.ProcessBooks(books, new LibraryEngine.BookFunctionDelegate(fPtrFunc));
 
             // c. Anonymous Method (GetISBN)
             fPtr = delegate (Book B) { return B.ISBN; };
